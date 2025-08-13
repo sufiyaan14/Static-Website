@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Nova Creative — Static Website</title>
+  <meta name="description" content="A clean, responsive static website template built with HTML, CSS, and JavaScript.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Skip to content for accessibility -->
+  <a class="skip-link" href="#main">Skip to content</a>
+  
+  <header class="site-header" id="top">
+    <div class="container nav">
+      <a class="logo" href="#top" aria-label="Nova Creative home">
+        <span aria-hidden="true">✦</span> Nova<span class="accent">Creative</span>
+      </a>
+      <button id="nav-toggle" class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+      </button>
+      <nav id="site-nav" class="site-nav" aria-label="Primary">
+        <a href="#services">Services</a>
+        <a href="#work">Work</a>
+        <a href="#about">About</a>
+        <a href="#contact" class="btn btn-sm">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero container">
+      <div class="hero__content">
+        <h1>We craft clean, fast, <span class="gradient">static websites</span>.</h1>
+        <p>Fully responsive, SEO-friendly, and accessible — perfect for portfolios, startups, and small businesses.</p>
+        <div class="cta">
+          <a href="#work" class="btn">See our work</a>
+          <a href="#contact" class="btn btn-outline">Get a quote</a>
+        </div>
+        <ul class="trust">
+          <li>Fast Load</li><li>SEO Ready</li><li>No Frameworks</li><li>A11y Friendly</li>
+        </ul>
+      </div>
+      <div class="hero__art" role="img" aria-label="Abstract shapes illustration"></div>
+    </section>
+
+    <section id="services" class="section container">
+      <header class="section__head">
+        <h2>Services</h2>
+        <p>Everything you need to launch a beautiful static site.</p>
+      </header>
+      <div class="grid grid-3">
+        <article class="card">
+          <h3>Design</h3>
+          <p>Modern, clean UI designed for clarity and conversion.</p>
+          <ul class="list">
+            <li>Brand-friendly palettes</li>
+            <li>Responsive layouts</li>
+            <li>Accessible typography</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>Development</h3>
+          <p>Performance-first HTML, CSS, and JavaScript — no heavy frameworks.</p>
+          <ul class="list">
+            <li>Semantic HTML</li>
+            <li>CSS Grid & Flexbox</li>
+            <li>Vanilla JS</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>Optimization</h3>
+          <p>Best practices baked in for speed and search.</p>
+          <ul class="list">
+            <li>Meta & OpenGraph</li>
+            <li>Lazy loading</li>
+            <li>Minification-ready</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="work" class="section section--muted">
+      <div class="container">
+        <header class="section__head">
+          <h2>Selected Work</h2>
+          <p>Simple gallery cards with hover effects (no external images needed).</p>
+        </header>
+        <div class="grid grid-3 gallery">
+          <figure class="tile" aria-label="Project card 1">
+            <div class="tile__art" data-accent="1"></div>
+            <figcaption>Landing Page Concept</figcaption>
+          </figure>
+          <figure class="tile">
+            <div class="tile__art" data-accent="2"></div>
+            <figcaption>Portfolio Template</figcaption>
+          </figure>
+          <figure class="tile">
+            <div class="tile__art" data-accent="3"></div>
+            <figcaption>Business Starter Site</figcaption>
+          </figure>
+          <figure class="tile">
+            <div class="tile__art" data-accent="4"></div>
+            <figcaption>Product Teaser</figcaption>
+          </figure>
+          <figure class="tile">
+            <div class="tile__art" data-accent="5"></div>
+            <figcaption>Case Study Layout</figcaption>
+          </figure>
+          <figure class="tile">
+            <div class="tile__art" data-accent="6"></div>
+            <figcaption>Blog Wireframe</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section container">
+      <header class="section__head">
+        <h2>About Us</h2>
+        <p>A tiny studio with big results. We love simple, fast, and reliable.</p>
+      </header>
+      <div class="about">
+        <div class="about__text">
+          <p><strong>Nova Creative</strong> is a small team focused on static sites that feel effortless. No build tools required — just clean code you can host anywhere.</p>
+          <p>Use this template as a starting point and customize colors, content, and sections. Everything is documented and easy to tweak.</p>
+          <ul class="list list--check">
+            <li>Zero dependencies</li>
+            <li>Keyboard accessible</li>
+            <li>Mobile-first</li>
+          </ul>
+        </div>
+        <div class="about__badge" aria-hidden="true">
+          <span class="badge">99</span>
+          <span class="badge__label">Performance Score</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section section--muted">
+      <div class="container">
+        <header class="section__head">
+          <h2>Contact</h2>
+          <p>Have a project in mind? Send a message.</p>
+        </header>
+        <form id="contact-form" class="form" novalidate>
+          <div class="form__row">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" placeholder="Your name" required />
+            <small class="error" id="err-name"></small>
+          </div>
+          <div class="form__row">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="you@example.com" required />
+            <small class="error" id="err-email"></small>
+          </div>
+          <div class="form__row">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell us about your project..." required></textarea>
+            <small class="error" id="err-message"></small>
+          </div>
+          <div class="form__row">
+            <label class="sr-only" for="budget">Budget</label>
+            <select id="budget" name="budget" aria-label="Budget">
+              <option value="">Select a budget (optional)</option>
+              <option value="under-500">$0–$500</option>
+              <option value="500-2000">$500–$2,000</option>
+              <option value="2000plus">$2,000+</option>
+            </select>
+          </div>
+          <div class="form__actions">
+            <button type="submit" class="btn">Send Message</button>
+            <p class="form__note">This is a demo — no backend required.</p>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="logo" href="#top"><span aria-hidden="true">✦</span> Nova<span class="accent">Creative</span></a>
+        <p class="muted">A clean static site template. Customize freely.</p>
+      </div>
+      <nav aria-label="Footer">
+        <a href="#services">Services</a>
+        <a href="#work">Work</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="footer-meta">
+        <p>&copy; <span id="year"></span> Nova Creative</p>
+        <a href="#" class="muted">Privacy</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
